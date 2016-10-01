@@ -1,0 +1,10 @@
+.search{ float:left; padding:6px 0 0 0; background:url(app/css/images/border.gif) repeat-y right 0; height:33px; margin-right:12px;}
+.search .field{ float:left; width:191px; height:21px; background:url(app/css/images/field.gif); padding:6px 5px 0 5px;}
+.search .field input{ width:191px; border:0; background:transparent; color:#fff; font-weight: bold;}
+.search-submit{ float:left; font-size:0; line-height:0; width:24px; height:27px; background:url(app/css/images/search.gif); text-indent: -4000px; border:0; margin-left:9px; cursor:pointer; position:relative; top:1px; margin-right:13px;}
+
+a { color:#636363; text-decoration: underline;}
+a:hover { color:#890000; text-decoration: none;}
+span.left { padding:10px 0 0 0;}
+span.more-links { margin-left:2px;}
+span.more-links a{ margin-left:9px;}

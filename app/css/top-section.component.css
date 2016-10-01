@@ -1,0 +1,23 @@
+h1#logo { font-size:0; line-height:0; width:248px; height:61px; float:left; }
+h1#logo a{ display:block; height:61px; text-indent: -4000px; background:url(app/css/images/logo.gif); }
+
+#navigation { float:right; white-space:nowrap; }
+#navigation ul{ list-style-type: none; padding-top:30px;}
+#navigation ul li{ float:left; display:inline; border-right:solid 1px #5f5f5f; padding-right:8px; margin-right:8px;}
+#navigation ul li.last{ border-right:0; padding-right:0; margin-right:0;}
+#navigation ul li a{ color:#fff;}
+#navigation ul li a:hover,
+#navigation ul li a.active { color:#ffd900; }
+
+
+#header { height:61px; }
+
+#slider { width:980px; height:418px; position:relative; overflow:hidden; }
+#slider-holder { width:980px; height:418px; position:relative; overflow:hidden; }
+#slider-holder ul{ width:980px; height:418px; position:relative; overflow:hidden; list-style-type: none;}
+#slider-holder .jcarousel-clip{ width:980px; height:418px; position:relative; overflow:hidden; }
+
+#slider-holder ul li{ width:980px; height:418px; position:relative; overflow:hidden; float:left; display:inline; }
+#slider-nav a{ position:absolute; top:180px; font-size:0; line-height:0; z-index:2; width:58px; height:58px; text-indent: -4000px;}
+#slider-nav a.prev{ background:url(app/css/images/prev.gif); left:0;}
+#slider-nav a.next{ background:url(app/css/images/next.gif); right:0;}

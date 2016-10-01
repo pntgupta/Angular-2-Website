@@ -1,0 +1,5 @@
+.shell { width:980px; margin:0 auto; }
+
+#top { height:479px; background:#000; }
+
+#main { width:100%; background:url(app/css/images/main.gif) repeat-x 0 0;}
