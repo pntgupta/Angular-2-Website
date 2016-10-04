@@ -8,3 +8,7 @@ a:hover { color:#890000; text-decoration: none;}
 span.left { padding:10px 0 0 0;}
 span.more-links { margin-left:2px;}
 span.more-links a{ margin-left:9px;}
+
+.cart { float:left; position:relative; top:2px; }
+.cart strong{ float:left; width:95px; height:36px; background:url(app/css/images/cart-price.gif); text-align: right; font-size:20px; color:#701616; line-height:36px; padding:0 7px 0 5px;}
+.cart-ico{ float:left; width:47px; height:36px; background:url(app/css/images/cart.gif) no-repeat 0 0; font-size:0; line-height:0; text-indent: -4000px;}

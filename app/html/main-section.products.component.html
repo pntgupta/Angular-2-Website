@@ -1,0 +1,71 @@
+<!-- Tabs -->
+      <div class="tabs">
+        <ul>
+          <li *ngFor="let tabName of tabsName">
+			<a href="#" [class.active]="tabName.status=='active'" [class.red]="tabName.status=='red'" (click)="UpdateData(tabName.name)">
+				<span>{{tabName.name}}</span>
+			</a>
+		  </li>
+        </ul>
+      </div>
+      <!-- Tabs -->
+      <!-- Container -->
+      <div id="container">
+        <div class="tabbed">
+          <!-- First Tab Content -->
+          <div class="tab-content" style="display:block;">
+            <div class="items">
+              <div class="cl">&nbsp;</div>
+              <ul>
+                <li *ngFor="let shoeDetail of shoesDetails">
+                  <div class="image"> <a href="#"><img [src]="shoeDetail.imgUrl" alt="" /></a> </div>
+                  <p> Item Number: <span>{{shoeDetail.itemNo}}</span><br />
+                    Size List : <span>{{shoeDetail.sizeAvailable}}</span><br />
+                    Brand Name: <a href="#">{{shoeDetail.brand}}</a> </p>
+                  <p class="price">Wholesale Price: <strong>{{shoeDetail.price | currency}}</strong></p>
+                </li>
+              </ul>
+              <div class="cl">&nbsp;</div>
+            </div>
+          </div>
+          <!-- End First Tab Content -->
+          <!-- Second Tab Content -->
+          <div class="tab-content">
+            <div class="items">
+              <div class="cl">&nbsp;</div>
+              <ul>
+                <li *ngFor="let shoeDetail of shoesDetails">
+                  <div class="image"> <a href="#"><img [src]="shoeDetail.imgUrl" alt="" /></a> </div>
+                  <p> Item Number: <span>{{shoeDetail.itemNo}}</span><br />
+                    Size List : <span>{{shoeDetail.sizeAvailable}}</span><br />
+                    Brand Name: <a href="#">{{shoeDetail.brand}}</a> </p>
+                  <p class="price">Wholesale Price: <strong>{{shoeDetail.price | currency}}</strong></p>
+                </li>
+              </ul>
+              <div class="cl">&nbsp;</div>
+            </div>
+          </div>
+          <!-- End Second Tab Content -->
+          <!-- Third Tab Content -->
+          <div class="tab-content">
+            <div class="items">
+              <div class="cl">&nbsp;</div>
+              <ul>
+                <li *ngFor="let shoeDetail of shoesDetails">
+                  <div class="image"> <a href="#"><img [src]="shoeDetail.imgUrl" alt="" /></a> </div>
+                  <p> Item Number: <span>{{shoeDetail.itemNo}}</span><br />
+                    Size List : <span>{{shoeDetail.sizeAvailable}}</span><br />
+                    Brand Name: <a href="#">{{shoeDetail.brand}}</a> </p>
+                  <p class="price">Wholesale Price: <strong>{{shoeDetail.price | currency}}</strong></p>
+                </li>
+              </ul>
+              <div class="cl">&nbsp;</div>
+            </div>
+          </div>
+          <!-- End Third Tab Content -->
+        </div>
+        <!-- Brands -->
+        <brandlogo_footer-app></brandlogo_footer-app>
+        <!-- End Footer -->
+      </div>
+      <!-- End Container -->

@@ -1,0 +1,16 @@
+<!-- Brands -->
+<div class="brands">
+	<h3>{{title}}</h3>
+	<div class="logos"> 
+		<a *ngFor="let img of brandLogoImagesArray" href="#">
+			<img [src]="img.imageUrl" alt="" />
+		</a>
+	</div>
+</div>
+<!-- End Brands -->
+<!-- Footer -->
+<div id="footer">
+  <div class="left"> 
+	<a *ngFor="let navlink of navigationLinks" href="#">{{navlink.name}}<span>|</span> </a>
+  <div class="right"> &copy; Sitename.com. Design by <a href="#">Punit</a> </div>
+</div>

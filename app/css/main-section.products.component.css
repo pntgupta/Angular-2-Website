@@ -1,0 +1,36 @@
+.cl { font-size:0; line-height:0; clear:both; display:block; height:0; }
+
+.al { text-align: left; }
+.ar { text-align: right; }
+.ac { text-align: center; }
+
+.tabs { height:36px; }
+.tabs ul{ list-style-type: none; font-size:14px; text-transform: uppercase; font-weight: bold; }
+.tabs ul li{ float:left; display:inline; margin-right:1px; }
+.tabs ul li a,
+.tabs ul li a span { float:left; height:36px; background:url(app/css/images/tab.gif) no-repeat 0 -37px; padding:0 0 0 20px;}
+.tabs ul li a span { background-position:right -37px; padding:0 20px 0 0;}
+.tabs ul li a { position:relative; line-height:36px; color:#895d23; }
+
+
+.tabs ul li a.red { background-position:0 -74px; color:#fff; }
+.tabs ul li a.red span{ background-position:right -74px;}
+
+.tabs ul li a.active,
+.tabs ul li a:hover { background-position:0 0; color:#4f4f4f; }
+.tabs ul li a.active span,
+.tabs ul li a:hover span{ background-position:right 0;}
+
+#container { background:#fff url(app/css/images/container-t.gif) no-repeat 0 0; padding:30px 20px; }
+
+.items { position:relative; width:960px; margin-right:-20px; padding-bottom:5px; }
+.items ul{ list-style-type: none;}
+.items ul .image{ text-align: center;}
+.items ul li{ float:left; border:dashed 1px #cfcfcf; width:194px; margin:0 18px 12px 0; padding:13px; }
+.items ul li p span{ color:#890000}
+.items ul li p.price{ padding-top:15px; }
+.items ul li p.price strong{ color:#890000; font-size:14px;}
+
+.tab-content { display:none;}
+
+.tabbed { min-height:420px;}

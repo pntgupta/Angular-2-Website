@@ -14,3 +14,7 @@ a:hover { color:#333; }
 
 
 h3 { font-size:15px; line-height:18px; color:#bcbcbc; text-transform: uppercase; }
+
+
+.left, .alignleft { float:left; display:inline; }
+.right, .alignright { float:right; display:inline; }

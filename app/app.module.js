@@ -14,14 +14,18 @@ var app_component_1 = require('./app.component');
 var top_section_component_1 = require('./top-section.component');
 var main_section_component_1 = require('./main-section.component');
 var main_section_search_component_1 = require('./main-section.search.component');
+var main_section_products_component_1 = require('./main-section.products.component');
+var main_section_products_brandlogo_footer_component_1 = require('./main-section.products.brandlogo-footer.component');
+var product_details_service_1 = require('./product-details.service');
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule],
-            declarations: [app_component_1.AppComponent, top_section_component_1.TopSectionComponent, main_section_component_1.MainSectionComponent, main_section_search_component_1.MainSection_SearchComponent],
-            bootstrap: [app_component_1.AppComponent]
+            declarations: [app_component_1.AppComponent, top_section_component_1.TopSectionComponent, main_section_component_1.MainSectionComponent, main_section_search_component_1.MainSection_SearchComponent, main_section_products_component_1.MainSection_ProductsComponent, main_section_products_brandlogo_footer_component_1.MainSection_Products_BrandLogoFooterComponent],
+            bootstrap: [app_component_1.AppComponent],
+            providers: [product_details_service_1.ProductDetailsService]
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);

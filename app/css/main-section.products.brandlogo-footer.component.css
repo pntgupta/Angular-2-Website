@@ -1,0 +1,8 @@
+
+.brands h3 { padding-bottom:10px;}
+.brands a { margin-right:30px;}
+
+#footer { border-top:dashed 1px #cfcfcf; margin-top:20px; padding:10px 0; color:#8e8e8e;}
+#footer a{ color:#8e8e8e; }
+#footer a:hover{ color:#9d0000; }
+#footer span{ padding:0 5px;}
