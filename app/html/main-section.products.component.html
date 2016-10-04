@@ -2,7 +2,7 @@
       <div class="tabs">
         <ul>
           <li *ngFor="let tabName of tabsName">
-			<a href="#" [class.active]="tabName.status=='active'" [class.red]="tabName.status=='red'" (click)="UpdateData(tabName.name)">
+			<a [class.active]="tabName.status=='active'" [class.red]="tabName.status=='red'" (click)="UpdateData(tabName.name)">
 				<span>{{tabName.name}}</span>
 			</a>
 		  </li>

@@ -15,9 +15,10 @@ var MainSection_ProductsComponent = (function () {
         this.productDetailsService = productDetailsService;
     }
     MainSection_ProductsComponent.prototype.ngOnInit = function () {
-        this.GetShoesDetailsFromService = this.productDetailsService.getProductDetails().shoesDetail;
-        this.shoesDetails = this.GetShoesDetailsFromService;
-        this.tabsName = this.productDetailsService.getProductDetails().tabsName;
+        this.GetDetailsFromService = this.productDetailsService.getProductDetails();
+        this.shoesDetails = this.GetDetailsFromService.shoesDetail;
+        this.tabsName = this.GetDetailsFromService.tabsName;
+        this.tabStatusArray = this.tabsName.map(function (obj) { return obj.status; });
     };
     MainSection_ProductsComponent.prototype.UpdateData = function (tabname) {
         //Which tab was previously active
@@ -25,13 +26,15 @@ var MainSection_ProductsComponent = (function () {
         //Tab on which clicked
         var currentIndex = this.tabsName.map(function (obj) { return obj.name; }).indexOf(tabname);
         if (prevIndex != currentIndex) {
-            //Updating current tab selection
-            this.tabsName[prevIndex].status = "default";
+            //Updating prev tab to original value but if in json it was default active then don't make it equal to original valus as there will be 2 active states now, make it default in that case
+            this.tabsName[prevIndex].status = this.tabStatusArray[prevIndex] == "active" ? "default" : this.tabStatusArray[prevIndex];
+            //Making current tab active
             this.tabsName[currentIndex].status = "active";
-            //Rendering all products
-            this.shoesDetails = this.productDetailsService.getProductDetails().shoesDetail;
+            //Reverting all products to original values
+            this.shoesDetails = this.GetDetailsFromService.shoesDetail;
             switch (currentIndex) {
                 case 0:
+                    //Creating new array by filter method so array is cloned not referenced
                     this.shoesDetails = this.shoesDetails.filter(function (obj) { return obj.safety == true; });
                     break;
                 case 1:
