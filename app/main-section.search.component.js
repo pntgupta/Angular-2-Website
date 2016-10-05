@@ -12,11 +12,15 @@ var core_1 = require('@angular/core');
 var MainSection_SearchComponent = (function () {
     function MainSection_SearchComponent() {
     }
+    MainSection_SearchComponent.prototype.AddToCart = function () {
+        this.totalCartValue += this.CartValue;
+    };
     MainSection_SearchComponent = __decorate([
         core_1.Component({
             selector: 'main_search-app',
             templateUrl: 'app/html/main-section.search.component.html',
-            styleUrls: ['app/css/main-section.search.component.css']
+            styleUrls: ['app/css/main-section.search.component.css'],
+            inputs: ['CartValue']
         }), 
         __metadata('design:paramtypes', [])
     ], MainSection_SearchComponent);

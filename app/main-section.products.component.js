@@ -13,6 +13,7 @@ var product_details_service_1 = require('./product-details.service');
 var MainSection_ProductsComponent = (function () {
     function MainSection_ProductsComponent(productDetailsService) {
         this.productDetailsService = productDetailsService;
+        this.clickedOnProduct = new core_1.EventEmitter();
     }
     MainSection_ProductsComponent.prototype.ngOnInit = function () {
         this.GetDetailsFromService = this.productDetailsService.getProductDetails();
@@ -45,6 +46,13 @@ var MainSection_ProductsComponent = (function () {
             }
         }
     };
+    MainSection_ProductsComponent.prototype.AddtoCart = function (shoeDetail) {
+        this.clickedOnProduct.emit(shoeDetail.price);
+    };
+    __decorate([
+        core_1.Output(), 
+        __metadata('design:type', Object)
+    ], MainSection_ProductsComponent.prototype, "clickedOnProduct", void 0);
     MainSection_ProductsComponent = __decorate([
         core_1.Component({
             selector: 'main_products-app',

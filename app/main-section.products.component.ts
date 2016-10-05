@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, EventEmitter, Output} from '@angular/core';
 
 import {ProductDetailsService} from './product-details.service';
 
@@ -8,6 +8,8 @@ import {ProductDetailsService} from './product-details.service';
 	styleUrls: ['app/css/main-section.products.component.css']
 })
 export class MainSection_ProductsComponent{
+	@Output() clickedOnProduct = new EventEmitter();
+
 	//It stores values coming from json so that we don't need to extract these values again and again
 	GetDetailsFromService;
 
@@ -58,5 +60,10 @@ export class MainSection_ProductsComponent{
 
 			}			
 		}
+	}
+
+	AddtoCart(shoeDetail)
+	{
+		this.clickedOnProduct.emit(shoeDetail.price);
 	}
 }
