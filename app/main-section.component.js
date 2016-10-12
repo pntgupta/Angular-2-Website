@@ -11,7 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var MainSectionComponent = (function () {
     function MainSectionComponent() {
+        this.totalCartValue = 0;
     }
+    MainSectionComponent.prototype.AddToCart = function (value) {
+        this.totalCartValue += value;
+    };
     MainSectionComponent = __decorate([
         core_1.Component({
             selector: 'main-app',

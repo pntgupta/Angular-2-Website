@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component,OnChanges} from '@angular/core';
 
 @Component({
 	selector: 'main_search-app',
@@ -8,11 +8,4 @@ import {Component} from '@angular/core';
 })
 export class MainSection_SearchComponent{
 	CartValue : number;
-
-	totalCartValue : number;
-
-	AddToCart(){
-		this.totalCartValue+=this.CartValue;
-	}
-
 }

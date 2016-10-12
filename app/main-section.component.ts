@@ -7,5 +7,9 @@ import {Component} from '@angular/core';
 
 })
 export class MainSectionComponent{
-	CartValueParent;
+	totalCartValue : number = 0;
+
+	AddToCart(value){
+		this.totalCartValue+=value;
+	}
 }

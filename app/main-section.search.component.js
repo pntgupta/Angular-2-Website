@@ -12,9 +12,6 @@ var core_1 = require('@angular/core');
 var MainSection_SearchComponent = (function () {
     function MainSection_SearchComponent() {
     }
-    MainSection_SearchComponent.prototype.AddToCart = function () {
-        this.totalCartValue += this.CartValue;
-    };
     MainSection_SearchComponent = __decorate([
         core_1.Component({
             selector: 'main_search-app',

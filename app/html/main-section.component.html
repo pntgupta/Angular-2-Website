@@ -3,12 +3,12 @@
   <div class="shell">
     <!-- Search, etc -->
     <div class="options">
-		<main_search-app [CartValue]='CartValueParent'></main_search-app>
+		<main_search-app [CartValue]='totalCartValue'></main_search-app>
 	 </div>
     <!-- End Search, etc -->
     <!-- Content -->
     <div id="content">
-		<main_products-app  (clickedOnProduct)="CartValueParent=$event"></main_products-app>
+		<main_products-app  (clickedOnProduct)="AddToCart($event)"></main_products-app>
     </div>
     <!-- End Content -->
   </div>

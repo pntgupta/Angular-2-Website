@@ -1,5 +1,6 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {FormsModule} from '@angular/forms';
 
 import {AppComponent} from './app.component';
 import {TopSectionComponent} from './top-section.component';
@@ -11,7 +12,7 @@ import {MainSection_Products_BrandLogoFooterComponent} from './main-section.prod
 import {ProductDetailsService} from './product-details.service';
 
 @NgModule({
-	imports: [BrowserModule],
+	imports: [BrowserModule, FormsModule],
 	declarations: [AppComponent,TopSectionComponent,MainSectionComponent,MainSection_SearchComponent,MainSection_ProductsComponent,MainSection_Products_BrandLogoFooterComponent],
 	bootstrap: [AppComponent],
 	providers: [ProductDetailsService]
